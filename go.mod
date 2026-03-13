@@ -1,13 +1,15 @@
-module github.com/earthly/earthly-example-proto-server
+module github.com/earthbuild/earthly-example-proto-server
 
-go 1.13
+go 1.26
 
 require (
-	github.com/gordonklaus/ineffassign v0.0.0-20210914165742-4cc7213b9bc8 // indirect
-	github.com/jackc/pgx/v4 v4.17.2 // indirect
-	github.com/jackc/tern v1.13.0 // indirect
-	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
-	golang.org/x/tools v0.1.12 // indirect
-	google.golang.org/grpc v1.33.1
-	google.golang.org/protobuf v1.28.1 // indirect
+	google.golang.org/grpc v1.79.2
+	google.golang.org/protobuf v1.36.11
+)
+
+require (
+	golang.org/x/net v0.52.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
+	golang.org/x/text v0.35.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20251202230838-ff82c1b0f217 // indirect
 )
