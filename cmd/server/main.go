@@ -7,8 +7,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/earthly/earthly-example-proto-server/kvapi"
-
+	pb "github.com/earthbuild/earthly-example-proto-server/kvapi"
 	"google.golang.org/grpc"
 )
 

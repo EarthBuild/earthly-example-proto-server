@@ -1,6 +1,6 @@
-VERSION 0.6
+VERSION 0.8
 
-FROM golang:1.24.5-alpine3.22
+FROM golang:1.26.1-alpine3.23
 
 RUN apk add --update --no-cache \
     bash \
@@ -35,7 +35,8 @@ deps:
 code:
     FROM +deps
     COPY --dir cmd ./
-    COPY github.com/earthly/earthly-example-proto:main+proto-go/go-pb kvapi
+    COPY github.com/earthbuild/earthly-example-proto:main+proto-go/go-pb kvapi
+    SAVE ARTIFACT kvapi AS LOCAL kvapi
 
 lint:
     FROM +code
